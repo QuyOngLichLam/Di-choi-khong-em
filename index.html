@@ -47,8 +47,42 @@
     <img src="bunnyRide.jpg" alt="Picture of me" />
 
     <br>
+
+    <!-- Buttons to select -->
+    <button onclick="showResponse('A')">Yes, let’s do it!</button>
+    <button onclick="showResponse('B')">Not today</button>
+
+     <!-- Placeholder for messages and images -->
+    <div id="response-area">
+        <p id="message"></p>
+        <img id="pictureA" src="letGo.jpg" alt="Picture A" />
+        <img id="pictureB" src="bunnySad.jpg" alt="Picture B" />
+    </div>
+
+    <!-- JavaScript to handle button clicks -->
+    <script>
+        function showResponse(button) {
+            var message = document.getElementById("message");
+            var pictureA = document.getElementById("pictureA");
+            var pictureB = document.getElementById("pictureB");
+
+            // Resetting images and message
+            message.innerHTML = '';
+            pictureA.style.display = 'none';
+            pictureB.style.display = 'none';
+
+            // Logic for button A
+            if (button === 'A') {
+                message.innerHTML = "Yay! Can’t wait to see you!";
+                pictureA.style.display = 'block';  // Show Picture A
+            } 
+            // Logic for button B
+            else if (button === 'B') {
+                message.innerHTML = "Maybe next time then. 😢";
+                pictureB.style.display = 'block';  // Show Picture B
+            }
+        }
+    </script>
     
-    <button onclick="alert('Yay! Can’t wait to see you!')">Yes, let’s do it!</button>
-    <button onclick="alert('Maybe next time then. 😢')">Not today</button>
 </body>
 </html>
