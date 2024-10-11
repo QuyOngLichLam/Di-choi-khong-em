@@ -35,12 +35,11 @@
             max-width: 300px;
             height: auto;
             border-radius: 15px;
-            margin-top: 20px;
+            margin: 0 auto; /* Center images horizontally */
         }
         /* Hide other images by default */
         #pictureA, #pictureB {
             display: none;
-            margin: 0 auto; /* Center images horizontally */
         }
         #message {
             font-size: 18px;
@@ -50,12 +49,12 @@
     </style>
 </head>
 <body>
-    <h1>Hey there, Want to Hang Out?</h1>
-    <p>I'd love to catch up and spend some time with you!</p>
+    <h1>Chào cô bé, tôi sẽ rất vui nếu em đi chơi cùng tôi</h1>
+    <p>Tôi muốn mời em đi ăn tối rồi đi thuỷ cung tối nay lúc 7h. Tại Thủy Cung Lotte World</p>
+    <p>Đi pleaseeeeeee</p>
     
     <!-- Add your picture below -->
     <img src="bunnyRide.jpg" alt="Picture of me" />
-
     <br>
 
     <!-- Buttons to select -->
@@ -83,12 +82,12 @@
 
             // Logic for button A
             if (button === 'A') {
-                message.innerHTML = "Yay! Can’t wait to see you!";
+                message.innerHTML = "Ngonnnnnn djt thôi";
                 pictureA.style.display = 'block';  // Show Picture A
             } 
             // Logic for button B
             else if (button === 'B') {
-                message.innerHTML = "Maybe next time then. 😢";
+                message.innerHTML = "M làm bố m khóc rồi";
                 pictureB.style.display = 'block';  // Show Picture B
             }
         }
